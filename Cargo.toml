@@ -1,0 +1,12 @@
+[package]
+name = "new-case"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.8.1"
+chrono = "0.4.39"
+futures = "0.3.31"
+rand = "0.8.5"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+
