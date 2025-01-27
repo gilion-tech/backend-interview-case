@@ -25,7 +25,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 async fn root() -> &'static str {
     "
-        Welcome to Quantum Innovations Inc.
+        Welcome to AI Quantum Innovations co.
 
         We are a company that specializes in quantum computing and data science.
         We are currently working on a project that involves generating synthetic data.
@@ -39,7 +39,7 @@ async fn root() -> &'static str {
 
 async fn get_data_stream() -> Response<Body> {
     let stream = stream::iter(0..1_000_000_000).map(|_| {
-        let random_date = get_random_data();
+        let random_date = get_random_data_two();
         Ok::<_, Infallible>(random_date)
     });
 
@@ -50,15 +50,22 @@ async fn get_data_stream() -> Response<Body> {
         .unwrap()
 }
 
-fn get_random_data() -> axum::body::Bytes {
+fn get_random_data_two() -> axum::body::Bytes {
     let mut rng = rand::thread_rng();
-    let random_date = format!(
-        "{:04}{:02}{:02}{:03}{:03}",
-        rng.gen_range(1960..=2025),
-        rng.gen_range(1..=12),
-        rng.gen_range(1..=31),
-        rng.gen_range(0..=255),
-        rng.gen_range(0..=255)
-    );
-    Bytes::from(random_date)
+
+    let year: u16 = rng.gen_range(1960..=2025);
+    let month: u8 = rng.gen_range(1..=12);
+    let day: u8 = rng.gen_range(1..=31);
+    let a: u8 = rng.gen_range(0..=255);
+    let b: u8 = rng.gen_range(0..=255);
+
+    let mut buffer = Vec::with_capacity(6);
+
+    buffer.extend_from_slice(&year.to_be_bytes());
+    buffer.push(month);
+    buffer.push(day);
+    buffer.push(a);
+    buffer.push(b);
+
+    axum::body::Bytes::from(buffer)
 }
