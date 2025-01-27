@@ -12,6 +12,8 @@ use rand::Rng;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
+    tracing_subscriber::fmt::init();
+
     let app = Router::new()
         .route("/", get(root))
         .route("/api/v1/data-stream", get(get_data_stream));
