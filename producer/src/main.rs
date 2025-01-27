@@ -1,12 +1,6 @@
 use std::convert::Infallible;
 
-use axum::{
-    body::{Body, Bytes},
-    http::StatusCode,
-    response::Response,
-    routing::get,
-    Router,
-};
+use axum::{body::Body, http::StatusCode, response::Response, routing::get, Router};
 use futures::{stream, StreamExt};
 use rand::Rng;
 
