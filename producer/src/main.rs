@@ -18,8 +18,9 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .route("/", get(root))
         .route("/api/v1/data-stream", get(get_data_stream));
 
-    let addr = "localhost:3000";
+    let addr = "0.0.0.0:3000";
     let listener = tokio::net::TcpListener::bind(&addr).await?;
+    println!("Server started and listening on http://{}", addr);
     axum::serve(listener, app).await?;
 
     Ok(())
