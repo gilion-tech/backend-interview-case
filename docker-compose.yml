@@ -1,0 +1,18 @@
+
+services:
+  producer:
+    build:
+      context: ./producer
+      dockerfile: Dockerfile
+    restart: "no"
+    command: ./producer
+    ports:
+      - "3000:3000"
+    stop_grace_period: 1s
+
+  interview-case-service:
+    build: .
+    depends_on:
+      - producer
+    restart: "no"
+    stop_grace_period: 1s
