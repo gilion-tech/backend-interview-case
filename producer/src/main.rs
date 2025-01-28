@@ -52,7 +52,7 @@ fn get_random_data_two() -> axum::body::Bytes {
 
     let year: u16 = rng.gen_range(1960..=2025);
     let month: u8 = rng.gen_range(1..=12);
-    let day: u8 = rng.gen_range(1..=31);
+    let day: u8 = rng.gen_range(1..=28);
     let a: u8 = rng.gen_range(0..=255);
     let b: u8 = rng.gen_range(0..=255);
 
