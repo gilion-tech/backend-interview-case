@@ -34,6 +34,6 @@ We'd like to be able to run the application with docker-compose, so please add y
 
 ## When you’re done 
 
-Make a private github repository and invite `jens-gilion`, `GeorgianaTurcsanyi` and `gilion-joel-b`.
+Create a private github repository, push your solution there and invite `jens-gilion`, `GeorgianaTurcsanyi` and `gilion-joel-b`.  Don't forget to let our recruitment team you are done so we can take a look at your solution.
 
 We respect your time and other commitments and ask you to not spend more than 5 hours doing this assignment. We’d rather see that you prioritize and scope out something due to time than spending additional time. And remember, this is your time to shine!
