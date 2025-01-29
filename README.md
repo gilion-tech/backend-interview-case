@@ -26,14 +26,14 @@ The data is sent in byte chunks. Each chunk is 6 bytes, the first 4 bytes is the
 
 - You can expect that we'd like to add multiple or similar endpoints and that you are not able to keep it all in memory of the application at all times. 
 
-- We primarily work with Golang/Python but the take home assignment can be done in any programming language of choice. 
+- **We primarily work with Golang/Python but the take home assignment can be done in any programming language of choice.**
 
 ## Instructions
 To launch with docker-compose, ensure you have it installed, then cd to this directory and do `docker-compose up --build`
 We'd like to be able to run the application with docker-compose, so please add your application to the `docker-compose.yml` file. 
 
-You are free to do this assignment in any
-
 ## When you’re done 
+
+Make a private github repository and invite `jens-gilion`, `GeorgianaTurcsanyi` and `gilion-joel-b`.
 
 We respect your time and other commitments and ask you to not spend more than 5 hours doing this assignment. We’d rather see that you prioritize and scope out something due to time than spending additional time. And remember, this is your time to shine!
