@@ -26,7 +26,7 @@ The data is sent in byte chunks. Each chunk is 6 bytes, the first 4 bytes is the
 
 - You can expect that we'd like to add multiple or similar endpoints and that you are not able to keep it all in memory of the application at all times. 
 
-- **We primarily work with Golang/Python but the take home assignment can be done in any programming language of choice.**
+- **We primarily work with Golang/Python but the take home assignment can be done in the programming language of choice.**
 
 ## Instructions
 To launch with docker-compose, ensure you have it installed, then cd to this directory and do `docker-compose up --build`
