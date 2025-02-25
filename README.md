@@ -37,3 +37,7 @@ We'd like to be able to run the application with docker-compose, so please add y
 Create a private github repository, push your solution there and invite `jens-gilion`, `GeorgianaTurcsanyi` and `gilion-joel-b`.  Don't forget to let our recruitment team know you are done so we can take a look at your solution.
 
 We respect your time and other commitments and ask you to not spend more than 5 hours doing this assignment. We’d rather see that you prioritize and scope out something due to time than spending additional time. And remember, this is your time to shine!
+
+## Interview
+
+During the interview with the candidate we ask a lot of questions regarding the technical decisions involved in making the finisihed project, later in the interview we usually also ask the candidate to add a small feature to the project.
