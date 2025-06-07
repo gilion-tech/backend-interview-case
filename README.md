@@ -16,7 +16,7 @@ We’ve provided a producer which can be run through docker. The producer should
 
 - We'd like to be able to also retrieve the metric `C` which is calculated by taking `A` divided by `B`.
 
-- We’d like to be able to retrieve the metric ‘D’ which is calculated by taking the average of (A_{kn +1},…,A_{kn +10}), basically the moving average of A.
+- We’d like to be able to retrieve the metric `D` which is calculated by taking the average of (A_{kn +1},…,A_{kn +10}), basically the moving average of A.
 
 
 ## The format
